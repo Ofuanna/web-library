@@ -6,7 +6,6 @@ import os
 
 if __name__ == '__main__':
     app.app_context().push()
-    db.create_all()
     role_count = len(db.session.query(Role).all())
     if role_count <= 0:
         db.session.add_all([Role(name="admin"), Role(name="author")])
