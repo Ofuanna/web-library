@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{%block title%}Flask Auth Example{%endblock%}</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='font/bootstrap-icons.css')}}" />
+    <script  src="{{url_for('static',filename='js/jquery-1.7.2.min.js')}}"></script>
+    </script>
+    <style>
+    #pwmessage{
+    color:red
+    }
+        select{
+        text-align-last: center;text-align: center;
+        -ms-text-align-last: center;-moz-text-align-last: center;
+        }
+        input{
+        text-align-last: center;text-align: center;
+        -ms-text-align-last: center;-moz-text-align-last: center;
+        }
+        textarea{
+        text-align-last: center;text-align: center;
+        -ms-text-align-last: center;-moz-text-align-last: center;
+        }
+    </style>
+    <script>
+        function getCountries(){
+        obj = document.getElementById('region')
+        regId = obj.options[obj.selectedIndex].value
+        server_data = {'reg_id':regId}
+        $.ajax({
+  type: "POST",
+  url: "/getcountries",
+  data: JSON.stringify(server_data),
+  contentType: "application/json",
+  dataType: 'json',
+  success: function(result) {
+    selcountry = document.getElementById('country')
+    selcountry.innerHTML = ''
+
+        Object.entries(result.countries).forEach(entry => {
+         myOption = document.createElement("option");
+        myOption.text = entry[1].name;
+        myOption.value = entry[1].id
+        selcountry.appendChild(myOption)
+        //  console.log(entry[1].code,entry[1].name);
+    });
+    }
+});
+        }
+
+    function confpassword(){
+    pword = document.getElementById("password").value
+    cpword = document.getElementById("cpassword").value
+    console.log(pword,cpword)
+    if(pword !== cpword){
+        document.getElementById("pwmessage").innerText = "password and confirm password not matched"
+       //document.getElementById("pwmessage").style.color='red'
+        }
+        else{
+        document.getElementById("pwmessage").innerText = ''
+    }
+    }
+</script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+              <li class="nav-item">
+                    <a href="{{ url_for('index') }}" class="nav-link active text-white" aria-current="page">
+                        <i class="bi-house text-white"></i>
+                    </a>
+              </li>
+                    {%if current_user.is_authenticated %}
+              <li class="nav-item">
+                    <a href="{{ url_for('profile') }}" class="nav-link text-white" >
+                        Profile
+                    </a>
+              </li>
+                    {%endif%}
+                    {%if not current_user.is_authenticated %}
+              <li class="nav-item">
+                    <a href="{{ url_for('login') }}" class="nav-link text-white" >
+                        Login
+                    </a>
+              </li>
+                    {%endif%}
+                    {%if not current_user.is_authenticated %}
+              <li class="nav-item">
+                    <a href="{{ url_for('signup') }}" class="nav-link text-white" >
+                        Sign Up
+                    </a>
+              </li>
+                    {%endif%}
+                    {%if current_user.is_authenticated %}
+              <li class="nav-item">
+                    <a href="{{ url_for('logout') }}" class="nav-link text-white" >
+                        Logout
+                    </a>
+              </li>
+                    {%endif%}
+          </ul>
+        </div>
+      </div>
+    </nav>
+<div class="container">
+   {% block content %}
+   {% endblock %}
+</div>
+<script  src="{{url_for('static',filename='bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js')}}"></script>
+    </script>
+</body>
+</html>

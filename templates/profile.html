@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+<h1 class="title">
+  Welcome, {{current_user}}!
+</h1>
+{%if current_user.roles|length > 0%}
+{%set roles = []%}
+{%for role in current_user.roles%}
+{% do roles.append(role) %}
+{%endfor%}
+{%if 'admin' in roles%}
+<div>
+  <div><a href="{{url_for('createbook')}}">Publish Book</a></div>
+</div>
+{%endif%}
+{%endif%}
+<div>
+  <div><a href="{{url_for('createbook')}}">Add new book</a></div>
+</div>
+{% endblock %}

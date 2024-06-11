@@ -1,0 +1,258 @@
+Leaving "Cell Padding" and "Cell Spacing" fields empty, most of the
+browsers insert
+0 pixel of "Cell Padding" and "Cell Spacing"
+0 pixel of "Cell Padding" and 1 pixel "Cell Spacing"
+1 pixel of "Cell Padding" and "Cell Spacing"
+1 pixel of "Cell Padding" and 2 pixels of "Cell Spacing"
+None
+
+2	
+
+
+If your Web page visitors are using "Firefox"
+a) Layer can be placed behind the plane of the Web page.
+b) A negative Z-index won't work.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+3	
+
+
+Find the most appropriate answer:
+a) The Template category of the Assets panel lists the name, location, type and file size.
+b) An optional region can include editable and repeating region not the locked region.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+4	
+
+
+Find the most appropriate answer:
+a) It's possible to view a site in the Site panel or in a window.
+b) If the files are moved from a folder to another one from outside Dreamweaver, the Pages will be displayed correctly.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+5	
+
+
+Find the most appropriate answer related to layer:
+a) In case of nested layer, the position of the nested layer based on parent layer
+b) If you change the position of a layer, it also changes the position of the layer code.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+6	
+
+
+Find the most appropriate answer:
+a) The colors...
+b) There is no automatic update in the CSS styles
+a) Are represented with an hexadecimal number and b) False
+a) Are represented with an hexadecimal number as well as it can be customized and b) False
+a) Can be customized and b) True
+a) Set a background image that will not be shown on the browser and b) True
+7	
+
+
+Find the most appropriate answer:
+a) The Optional Editable Region command doesn't let you name the editable region.
+b) You can select the editable region and change its name in the property inspector.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+8	
+
+
+Find the most appropriate answer:
+a) You can't edit a layer's Right and Bottom position properties from the Property inspector
+b) You can even use Negative value to move part or all of a layer off the page entirely.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+9	
+
+
+Find the most appropriate answer:
+a) All browsers support the CSS style sheets
+b) When you select a font...
+a) False and b) groups of fonts appear instead of a single one
+a) False and b) the font must be downloaded from the Internet
+a) True and b) font must be downloaded from the Internet
+a) True and b) it has to be a Macromedia font
+10	
+
+
+Find the most appropriate answer:
+a) The CSS styles...
+b) The style sheets...
+a) are applicable to paragraphs and b) allow one to apply a style on all the labels of the same type
+a) are applicable to paragraphs as well as to selected words and b) allow one to apply a style on all the labels of the same type
+a) are applicable to selected words and b) allow one to apply a style on all the labels of the same type
+a) are applicable to selected words and b) are not updated automatically
+None of the above
+11	
+
+
+Find the most appropriate answer:
+a) You can't move the layer completely off the screen by dragging it.
+b) Property inspector lets you resize multiple layers at once.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+12	
+
+
+Find the most appropriate answer:
+a) A web link is the same as a hyperlink or link.
+b) When the link is over an image
+a) False and b) allow one to apply a link
+a) False and b) blue border always appears around the image
+a) True and b) A series of small points appear on the edge when you click on it
+a) True and b) The image turns blue
+None of the above
+13	
+
+
+Find the most appropriate answer:
+a) The nested layer can appear anywhere on the page
+b) The HTML of nested layer should be written inside the HTML of parent layer.c) The nested layer should appear inside the parent layer.
+a) and b) False and c) True
+a) and b) True and c) False
+a) and c) False and b) True
+All True
+b) and c) True and a) False
+None
+14	
+
+
+Find the most appropriate answer:
+a) You can't lock an editable region passed from a master template to a nested template.
+b) When creating page from template, you can add content only to an editable region.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+15	
+
+
+_______ method gives you higher security, when you transmit data to a Web-server. _________ button allow you to send additional data to a Web-server.
+a)Get
+b)Post
+c)Post
+d)Data field
+e)attached
+f)Browse
+g)File Field
+a and d
+b and d
+b and f
+c and e
+c and g
+None
+16	
+
+
+Find the most appropriate answer:
+a) The expanded tables mode is used to draw pages with a large content amount
+b) Frames don't allow us to improve the functionality nor the appearance of the pages
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+17	
+
+
+Find the most appropriate answer:
+a) In a multiline text field, we can not limit the amount of text someone type into that box.
+b) Wrap property is not part of HTML or XHTML standard.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+18	
+
+
+Find the most appropriate answer:
+a) Each one of the frames of a page contains an individual HTML document
+b) It's possible to edit the documents contained in the frames from the page that contains the frameset
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+19	
+
+
+If the option "Same size" is checked ...
+...it indicates that the different frames from the page have the same size
+...it indicates that the page of frames will be visualized in the browser with the same size as the one shown in Dreamweaver
+...it indicates that the users will not be able to change the size of the frames in their browser
+None of the above
+20	
+
+
+Find the most appropriate answer:
+a) So that a form works correctly it's necessary to define it using some programming language, like for example VB Script
+b) It isn't good to use tables to organize the elements of the forms.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+21	
+
+
+Find the most appropriate answer:
+a) The H and W fields must be zero in order for the audio controls not to be shown
+b) Sounds are automatically played when a page loads.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+22	
+
+
+Find the most appropriate answer:
+a)Jump menu can be added without form.
+b) First item of a jump menu can never be used as a link unless you include the inset "Go" button after the menu.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+23	
+
+
+Find the most appropriate answer:
+a) Checkbox only works in __________ browser(s)
+b) To activate the "Check Plugin" behavior for Flash and Shockwave players in Internet Explorer, Dreamweaver adds some addition code in _________ language
+a) Firefox and b) ActionScript
+a) Internet Explorer and Netscape and b) VBScript
+a) Internet Explorer, Netscape and Firefox and b) JavaScript
+a) Safari and b) JavaScript
+a)Internet Explorer, Netscape and Opera and b) C++
+24	
+
+
+Find the most appropriate answer:
+a) You can swap more than one image using a single Swap Image behavior.
+b) You can add "Go" button to a jump menu at the time of editing if you have not added earlier.
+a) False and b) True
+a) True and b) False
+Both False
+Both True
+25	
+
+
+Find the most appropriate answer:
+a) When the design of a template is modified, all the pages based on it can't be updated
+b) Templates are files with a DWT extension that are saved in the Web site
+a) False and b) True
+a) True and b) False
+Both False
+Both True

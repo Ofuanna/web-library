@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block maincontent %}
+<h1 class="title">
+  Welcome, {{current_user}}!
+</h1>
+    <div>
+        <ul>
+            {%for role in current_user.roles%}
+            <li>{{role.name}}</li>
+            {%endfor%}
+        </ul>
+    </div>
+{% endblock %}
